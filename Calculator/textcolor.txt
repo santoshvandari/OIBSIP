@@ -1,0 +1,8 @@
+background color: #4d8ac8
+input field: cce5ff;
+enter btn: 4d8ac8
+calc background: ebf5ff
+number btn color: cce5ff
+other btn: 2ad0fa
+input text color: 4d8ac8
+result color: 163c5f
