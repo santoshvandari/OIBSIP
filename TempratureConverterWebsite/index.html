@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temprature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="celsius">
-                <label for="cel">Celsius</label>
-                <input type="number" id="cel">
-            </div>
-            <div class="fahrenheit">
-                <label for="fah">Fahrenheit</label>
-                <input type="number" id="fah">
+            <h1>Temprature Converter</h1>
+            <div class="inputdata">
+
+                <div class="celsius">
+                    <label for="cel">Celsius</label>
+                    <input type="number" id="cel">
+                </div>
+                <div class="fahrenheit">
+                    <label for="fah">Fahrenheit</label>
+                    <input type="number" id="fah">
+                </div>
             </div>
             <div class="btn">
-                <button id="calc">Calculate</button>
+                <p>CONVERT TO</p>
+                <button id="celsius">Celsius</button>
+                <button id="fahrenheit">Fahrenheit</button>
             </div>
         </div>
     </div>

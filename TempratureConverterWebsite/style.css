@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    background: #F5F7F8;
+    /* background: red; */
+    padding: 50px 50px;
+    border-radius: 10px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    color: #495E57;
+}
+.inputdata{
+    display: flex;
+    gap: 50px;
+}
+.celsius,.fahrenheit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    margin: 10px 0;
+    color: #45474B;
+}
+input{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+.btn{
+    margin: 50px 0;
+}
+.btn p{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.btn button{
+    padding: 5px 10px;
+    background:#141E46;
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #141E46;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+
+}
+.btn button:hover{
+    background: #fff;
+    color: #141E46;
+    border: 1px solid #141E46;
+    transition: all 0.3s ease;
+}
