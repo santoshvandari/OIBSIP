@@ -32,6 +32,8 @@
     outline: none;
     font-weight: bold;
     text-align: right;
+    /* color: #4d8ac8; */
+    /* background: #cce5ff; */
 }
 .row button{
     /* padding: 10px 20px; */
@@ -43,4 +45,9 @@
     width: 100px;
     border: none;
     cursor: pointer;
+    background:#cce5ff;
+}
+#equal{
+    width: 210px;
+    margin: 5px;
 }
