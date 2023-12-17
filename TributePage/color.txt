@@ -1,0 +1,8 @@
+background: 092635
+1B4242
+164863
+
+9EC8B9
+B6BBC4
+
+color of text: EEF5FF
