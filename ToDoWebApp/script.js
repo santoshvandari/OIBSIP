@@ -68,4 +68,13 @@ setData('santosh')
 setData('bhandari')
 setData('hello')
 setData('tasfasf')
+setData('hello')
 // getData();
+
+
+// Writing the Code for the Project
+let InputTask=document.getElementById('inputedtask');
+let tasklisttable=document.getElementById('tasklist');
+document.getElementById('tasksubmit').addEventListener('click',function(){
+
+})
