@@ -6,11 +6,10 @@ function setData(task) {
             taskList = getData() || [];
             taskList.push(task);
             data = JSON.stringify(taskList)
-            console.log(data)
             localStorage.setItem("tasklist", JSON.stringify(taskList));
         }
     } else {
-        console.log("Task already exists");
+        alert("Task already exists");
     }
 }
 function getData() {
@@ -42,14 +41,12 @@ function getItem(item) {
 // Writing the Code for the Project
 let InputTask = document.getElementById('inputedtask');
 let tasklisttable = document.getElementById('tasklist');
-console.log(tasklisttable)
 document.getElementById('tasksubmit').addEventListener('click', function () {
     inputedtask = InputTask.value;
     if (!inputedtask) {
-        console.log("Please Enter the Task");
+        alert("Please Enter the Task");
     } else {
         setData(inputedtask);
-        console.log(inputedtask)
     }
     ListTasks();
 })
@@ -62,7 +59,6 @@ function ListTasks() {
         html = '';
         counter = 1;
         for (task of taskList) {
-            console.log(task)
             html += `<tr>
                  <th scope="row">${counter}</th>
                  <td>${task}</td>
@@ -73,8 +69,6 @@ function ListTasks() {
                  </td>
              </tr>`;
             counter++;
-            console.log(html)
-
         }
         tasklisttable.innerHTML = html;
     }
@@ -85,7 +79,6 @@ ListTasks();
 function DeleteEl(task){
     tasklist=getData();
     index=taskList.indexOf(task)
-    console.log(index)
     let result = tasklist.filter((item,i)=>{
         if(i!=index){
             return item
@@ -94,3 +87,5 @@ function DeleteEl(task){
     localStorage.setItem("tasklist", JSON.stringify(result));
     ListTasks();
 }
+
+// Function for Handeling the Task Completed
