@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    background: #092635;
+}
+main .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.top{
+    text-align: center;
+    margin: 50px 0;
+}
+.top h1{
+    text-decoration: underline;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.top p.date{
+    font-size: 20px;
+    color: #EEF5FF;
+    margin: 20px 0;
+    font-size: bold;
+}
+.main{
+    margin: 50px 0;
+}
+.main img{
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
