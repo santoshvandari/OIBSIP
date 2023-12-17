@@ -1,87 +1,96 @@
-// // task list template
-// <tr>
-//     <th scope="row">1</th>
-//     <td>Buy groceries for next week</td>
-//     <td>In progress</td>
-//     <td>
-//         <button type="submit" class="btn btn-danger">Delete</button>
-//         <button type="submit" class="btn btn-success ms-1">Finished</button>
-//     </td>
-// </tr>
-
 //Creating the Local Storage to SetData
 let taskList = [];
 function setData(task) {
-    if(getItem(task)==false){
-        // console.log(getItem(task))
-        if(task){
-            // console.log(task)
-            taskList=getData() || [];
+    if (getItem(task) == false) {
+        if (task) {
+            taskList = getData() || [];
             taskList.push(task);
-            data=JSON.stringify(taskList)
+            data = JSON.stringify(taskList)
             console.log(data)
-            localStorage.setItem("tasklist",JSON.stringify(taskList));
+            localStorage.setItem("tasklist", JSON.stringify(taskList));
         }
-    }else{
+    } else {
         console.log("Task already exists");
     }
 }
 function getData() {
     let str = localStorage.getItem("tasklist");
     if (str != null) {
-        // console.log(str)
         taskList = JSON.parse(str);
-        // console.log(taskList)
         return taskList;
-    }else{
+    } else {
         return null;
     }
 }
 
 //Reading Item
-function getItem(item){
+function getItem(item) {
     let str = localStorage.getItem('tasklist')
-    let task  = JSON.parse(str)
-    // console.log(task)
-    if(task!=null){
-        let dataindex= task.indexOf(item)
-        if(dataindex==-1){
+    let task = JSON.parse(str)
+    if (task != null) {
+        let dataindex = task.indexOf(item)
+        if (dataindex == -1) {
             return false
-        }else{
+        } else {
             return true
         }
-    }else{
+    } else {
         return false
     }
 }
 
-
-// data=['santosh','helloq']
-// indexdata=data.indexOf("hello")
-// console.log(indexdata)
-
-setData('test')
-setData('test')
-setData('santosh')
-setData('bhandari')
-setData('hello')
-setData('tasfasf')
-setData('hello')
-// getData();
-
-
 // Writing the Code for the Project
-let InputTask=document.getElementById('inputedtask');
-let tasklisttable=document.getElementById('tasklist');
-document.getElementById('tasksubmit').addEventListener('click',function(){
-    inputedtask=InputTask.value;
-    if(!inputedtask){
-        // setData(inputedtask);
-        // InputTask.value="";
+let InputTask = document.getElementById('inputedtask');
+let tasklisttable = document.getElementById('tasklist');
+console.log(tasklisttable)
+document.getElementById('tasksubmit').addEventListener('click', function () {
+    inputedtask = InputTask.value;
+    if (!inputedtask) {
         console.log("Please Enter the Task");
-    }else{
-
+    } else {
+        setData(inputedtask);
         console.log(inputedtask)
     }
-
+    ListTasks();
 })
+
+// Reading the Data from the Local Storage listing the task
+function ListTasks() {
+    let taskList = getData();
+    console.log(taskList)
+    if (taskList) {
+        html = '';
+        counter = 1;
+        for (task of taskList) {
+            console.log(task)
+            html += `<tr>
+                 <th scope="row">${counter}</th>
+                 <td>${task}</td>
+                 <td>Progress</td>
+                 <td>
+                    <button type="submit" class="btn btn-danger" onclick='DeleteEl("${task}")'>Delete</button>
+                    <button type="submit" class="btn btn-success ms-1">Finished</button>
+                 </td>
+             </tr>`;
+            counter++;
+            console.log(html)
+
+        }
+        tasklisttable.innerHTML = html;
+    }
+}
+
+// Calling the ListTasks Function
+ListTasks();
+function DeleteEl(task){
+    tasklist=getData();
+    index=taskList.indexOf(task)
+    console.log(index)
+    let result = tasklist.filter((item,i)=>{
+        if(i!=index){
+            return item
+        }
+    })
+    localStorage.setItem("tasklist", JSON.stringify(result));
+    ListTasks();
+}
