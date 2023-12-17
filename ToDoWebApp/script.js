@@ -21,8 +21,6 @@ function setData(task) {
             data=JSON.stringify(taskList)
             console.log(data)
             localStorage.setItem("tasklist",JSON.stringify(taskList));
-        }else{
-            console.log("Task is empty");
         }
     }else{
         console.log("Task already exists");
@@ -77,6 +75,13 @@ let InputTask=document.getElementById('inputedtask');
 let tasklisttable=document.getElementById('tasklist');
 document.getElementById('tasksubmit').addEventListener('click',function(){
     inputedtask=InputTask.value;
-    console.log(inputedtask)
+    if(!inputedtask){
+        // setData(inputedtask);
+        // InputTask.value="";
+        console.log("Please Enter the Task");
+    }else{
+
+        console.log(inputedtask)
+    }
 
 })
