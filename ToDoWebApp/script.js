@@ -43,6 +43,7 @@ let InputTask = document.getElementById('inputedtask');
 let tasklisttable = document.getElementById('tasklist');
 document.getElementById('tasksubmit').addEventListener('click', function () {
     inputedtask = InputTask.value;
+    InputTask.value='';
     if (!inputedtask) {
         alert("Please Enter the Task");
     } else {
@@ -60,14 +61,13 @@ function ListTasks() {
         counter = 1;
         for (task of taskList) {
             html += `<tr>
-                 <th scope="row">${counter}</th>
-                 <td>${task}</td>
-                 <td>Progress</td>
-                 <td>
+                <th scope="row">${counter}</th>
+                <td>${task}</td>
+                <td>Progress</td>
+                <td>
                     <button type="submit" class="btn btn-danger" onclick='DeleteEl("${task}")'>Delete</button>
-                    <button type="submit" class="btn btn-success ms-1">Finished</button>
-                 </td>
-             </tr>`;
+                </td>
+            </tr>`;
             counter++;
         }
         tasklisttable.innerHTML = html;
@@ -75,7 +75,6 @@ function ListTasks() {
 }
 
 // Calling the ListTasks Function
-ListTasks();
 function DeleteEl(task){
     tasklist=getData();
     index=taskList.indexOf(task)
@@ -88,4 +87,4 @@ function DeleteEl(task){
     ListTasks();
 }
 
-// Function for Handeling the Task Completed
+ListTasks();
