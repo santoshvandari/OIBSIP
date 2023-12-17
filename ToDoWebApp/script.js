@@ -76,5 +76,7 @@ setData('hello')
 let InputTask=document.getElementById('inputedtask');
 let tasklisttable=document.getElementById('tasklist');
 document.getElementById('tasksubmit').addEventListener('click',function(){
+    inputedtask=InputTask.value;
+    console.log(inputedtask)
 
 })
