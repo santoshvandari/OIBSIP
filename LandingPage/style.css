@@ -215,9 +215,9 @@ nav ul li a:hover,.ten ul li a:hover{
     margin: 20px 0px;
     width: 32%;
 }
-.six .cards .card img{
+.six .cards .card i{
     padding: 0px 0px 10px;
-    height: 54px;
+    font-size: 50px;
 }
 .card h3{
     text-transform: uppercase;
