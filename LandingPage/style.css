@@ -9,7 +9,8 @@ header nav,.ten{
     height: 150px;
     padding: 0px 80px;
 }
-nav .logo h1{
+nav .logo h1 a{
+    text-decoration: none;
     color: #fff;
 }
 nav ul,.ten ul{
