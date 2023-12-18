@@ -147,7 +147,7 @@ nav ul li a:hover,.ten ul li a:hover{
 .third .images img{
     width: 470px;
     height: 350px;
-    border: 5px solid #0000005b;
+    border: 5px solid #000000;
 }
 .fourth{
     display: flex;
@@ -226,6 +226,7 @@ nav ul li a:hover,.ten ul li a:hover{
 }
 .card p{
     font-size: 16px;
+    text-align: justify;
 }
 .seven{
     width: 60%;
