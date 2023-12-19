@@ -2,6 +2,22 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 header nav,.ten{
     display: flex;
     justify-content: space-around;
@@ -47,6 +63,7 @@ nav ul li a:hover,.ten ul li a:hover{
     height: 758px;
     background: linear-gradient(to top,rgba(55, 58, 63, 0.7) 50%, rgba(55, 58, 63,.7) 50% ), url("img/main.jpg") no-repeat center center/cover;
     position: absolute;
+    background-attachment: fixed;
     top:-150px;
     display: flex;
 }
@@ -172,6 +189,7 @@ nav ul li a:hover,.ten ul li a:hover{
     padding: 0% 25%;
     background: linear-gradient(to top,rgba(55, 58, 63, 0.8) 50%, rgba(55, 58, 63,.8) 50% ), url("img/p4.jpg") no-repeat center center/cover;
     height: 350px;
+    background-attachment: fixed;
     color: #fff;
 }
 .fifth h2{
@@ -463,4 +481,29 @@ footer span{
     background-color: #4c8df3;
     color: #fff;
     transition: all .2s linear;
+}
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader .loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #4c8df3;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
 }
