@@ -17,5 +17,9 @@ from django.urls import path
 from  Auth import views
 
 urlpatterns = [
+    path('',views.home,name='home'),
     path('login/',views.log_in,name='login'),    
+    path('signup/',views.log_out,name='logout'),    
+    path('index/',views.home,name='home'), 
+    path('logout/',views.log_out,name='logout'),   
 ]
