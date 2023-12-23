@@ -32,3 +32,21 @@ input{
     padding: 5px 10px;
     outline: none;
 }
+.btn-wrapper{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.btn-wrapper button{
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #F3F8FF;
+    border: 1px solid #F3F8FF;
+    border-radius: 5px;
+}
+.btn-wrapper button:hover{
+    background: transparent;
+    color: #fff;
+}
