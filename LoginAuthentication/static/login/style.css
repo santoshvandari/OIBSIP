@@ -9,16 +9,26 @@ body{
    justify-content: center;
    align-items: center;
    height: 100vh;
+   background: #092635;
+
 }
 .form-wrapper{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background: #11235A;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #fff;
+    
 }
 label{
     font-size:20px;
+    color: #fff;
+    font-weight: bold;
 }
 input{
     font-size: 20px;
     padding: 5px 10px;
+    outline: none;
 }
