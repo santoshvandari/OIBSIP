@@ -17,5 +17,8 @@ body{
 }
 label{
     font-size:20px;
-    margin: 10px 2px;
+}
+input{
+    font-size: 20px;
+    padding: 5px 10px;
 }
