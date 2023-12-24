@@ -37,6 +37,9 @@ def sign_up(request):
         email=request.POST['email']
         firstname=request.POST['firstname']
         lastname=request.POST['lastname']
+        # check the user is already is created or not 
+        if User.objects.filter(username=username).exists():
+            return render(request,'signup.html',{'error':'Username already exists'})
         # create user
         user=User.objects.create_user(username=username,password=password,email=email,first_name=firstname,last_name=lastname)
         user.save()
