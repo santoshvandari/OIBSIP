@@ -32,5 +32,15 @@ def sign_up(request):
     if request.user.is_authenticated:
         return redirect('/')
     if request.method == 'POST':
-        pass
+        username=request.POST['username']
+        password=request.POST['password']
+        email=request.POST['email']
+        firstname=request.POST['firstname']
+        lastname=request.POST['lastname']
+        # create user
+        user=User.objects.create_user(username=username,password=password,email=email,first_name=firstname,last_name=lastname)
+        user.save()
+        # login created user
+        login(request,user)
+        return redirect('/')
     return render(request,'signup.html')

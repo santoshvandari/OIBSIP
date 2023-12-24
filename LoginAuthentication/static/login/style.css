@@ -48,8 +48,15 @@ input{
     border-radius: 5px;
     transition: all 0.2s ease;
 }
+button a{
+    text-decoration: none;
+    color: #000;
+}
 .btn-wrapper button:hover{
     background: transparent;
+    color: #fff;
+}
+button a:hover{
     color: #fff;
 }
 .btn-wrapper button:active{
