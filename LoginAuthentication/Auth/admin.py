@@ -4,3 +4,5 @@ from .models import UserDetails
 # Register your models here.
 class UserDetailsDisplay(admin.ModelAdmin):
     list_display=['fullname','email','username']
+
+admin.site.register(UserDetails,UserDetailsDisplay)

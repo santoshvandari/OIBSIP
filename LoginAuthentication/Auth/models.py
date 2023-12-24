@@ -8,3 +8,7 @@ class UserDetails(models.Model):
     # add more fields
     fullname=models.CharField(max_length=100)
     email=models.EmailField()
+
+    class Meta:
+        db_table='userdetails'
+        sorted_by=['username']
