@@ -9,16 +9,16 @@
 <body>
     <div class="form-wrapper">
         <form method="post">
+            {% csrf_token %}
             <label for="username">Username</label>
-            <input type="text" name="username" placeholder="Enter a Username" /> 
+            <input type="text" name="username" placeholder="Enter a Username" required/> 
             <label for="username">Full Name</label>
-            <input type="text" name="fullname" placeholder="Enter a Username" />
+            <input type="text" name="fullname" placeholder="Enter a Full Name" required/>
             <label for="username">Email</label>
-            <input type="email" name="email" placeholder="Enter a Username" /> 
+            <input type="email" name="email" placeholder="Enter a Email" required/> 
             <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Enter a Password" />
+            <input type="password" name="password" placeholder="Enter a Password" required/>
             <div class="btn-wrapper">
-
                 <button type="reset">Clear</button>
                 <button type="submit">SignUp</button>
             </div>
