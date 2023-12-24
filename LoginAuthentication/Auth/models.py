@@ -11,4 +11,4 @@ class UserDetails(models.Model):
 
     class Meta:
         db_table='userdetails'
-        sorted_by=['username']
+        ordering=['user']
