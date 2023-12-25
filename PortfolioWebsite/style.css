@@ -16,10 +16,10 @@ header{
     display: flex;
     background: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 header .logo{
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: center;
     background: linear-gradient(#8d98e3 40%, #854fee 60%);
@@ -41,7 +41,8 @@ color: #fff;
  }
 }
 header nav{
-    width: 65%;
+    width: 50%;
+    padding: 0px 50px;
 }
 nav ul{
     display: flex;
