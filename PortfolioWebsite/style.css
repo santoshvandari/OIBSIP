@@ -4,14 +4,12 @@
 }
 html{
     scroll-behavior: smooth;
-    font-size: 10px;
 }
 body{
     width: 100%;
     height: 100vh;
     background: linear-gradient(to left, #fff 88%, #c3f5ff 15%);
 }
-
 /* starting header secton  */
 header{
     height: 20vh;
@@ -32,7 +30,6 @@ header .logo{
 .logo h1{
 text-transform: uppercase;
 color: #fff;
-font-size: 3rem;
 }
 @keyframes logoanimate {
  from{
@@ -46,7 +43,6 @@ header nav{
     width: 65%;
 }
 nav ul{
-    padding: 0px 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -56,12 +52,12 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 20px;
     color: #000;
     font-weight: 600;
     position: relative;
 }
-.active{
+.home{
     color: #4458dc;
 }
 nav ul li a:before{
@@ -78,7 +74,6 @@ nav ul li a:hover:before{
     width: 100%;
 }
 /* ending header section  */
-
 /* starting main section  */
 main{
     height: 80vh;
@@ -89,7 +84,7 @@ main{
 .leftpart{
     color: #000;
     text-transform: uppercase;
-    margin-left: 5rem;
+    margin-left: 80px;
 }
 .leftpart h2{
 font-size: 40px;
@@ -135,7 +130,7 @@ position: relative;
     color: #fff; 
 }
 .leftpart .btn2{
-    margin-left: 3rem;
+    margin-left: 48px;
     background: transparent;
     color: #000;
 }
@@ -148,13 +143,11 @@ position: relative;
     color: #fff;
 }
 .rightpart{
-    margin-right: 3rem ;
+    margin-right: 48px;
     border-radius: 31% 68% 17% 24% / 35% 67% 33% 32% ;
-background: #e8fbff;
+    background: #e8fbff;
 }
 .rightpart img{
-    /* width: 500px; */
     height: 500px;
     border-radius: 100px;
-    /* height: 400px; */
 }
