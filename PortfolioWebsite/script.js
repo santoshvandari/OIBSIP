@@ -1,4 +1,6 @@
 'use strict';
 (function(){
-    console.log("HElloWOrld");
+    window.addEventListener('load', function(){
+        document.querySelector('div.preloader').style='display:none';
+    })
 })();
