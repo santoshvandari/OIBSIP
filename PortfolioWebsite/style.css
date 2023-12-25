@@ -6,9 +6,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
-    background: linear-gradient(to left, #fff 88%, #c3f5ff 15%);
+    background: linear-gradient(to left, #fff 88%, #c3f5ff 15%); */
 }
 /* Header Section Start  */
 header{
@@ -77,13 +77,16 @@ nav ul li a:hover:before{
 /* Header Section End*/
 /* Main Section Start  */
 main{
-    padding: 0px 50px; 
+    /* padding: 0px 50px;  */
 }
 /* Home Section Start */
 section#home{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to left, #fff 88%, #c3f5ff 15%);
 }
 .leftpart{
     color: #000;
@@ -162,3 +165,8 @@ position: relative;
 
 
 /* Main Section End */
+
+/* Footer Section Start */
+footer{
+
+}
