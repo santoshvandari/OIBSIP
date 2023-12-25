@@ -57,7 +57,7 @@ nav ul li a{
     font-weight: 600;
     position: relative;
 }
-.home{
+.active{
     color: #4458dc;
 }
 nav ul li a:before{
