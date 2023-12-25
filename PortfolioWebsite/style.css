@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    font-size: 10px;
 }
 body{
     width: 100%;
@@ -43,6 +44,7 @@ header nav{
     width: 65%;
 }
 nav ul{
+    padding: 0px 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -52,7 +54,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #000;
     font-weight: 600;
     position: relative;
