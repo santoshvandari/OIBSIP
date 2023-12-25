@@ -158,6 +158,9 @@ position: relative;
     height: 500px;
     border-radius: 100px;
 }
+hr{
+    margin: 10px 0;
+}
 /* Home Section End */
 /* About Section Start  */
 section#about{
@@ -172,14 +175,40 @@ section#about{
     text-decoration: underline;
     font-weight: bold;
     margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    background: #c3f5ff;
+    padding: 20px;
 }
 .about-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:0 200px ;
+    gap: 100px;
 }
-
-
+.about-wrapper .img img{
+    height: 500px;
+    border-radius: 10px;
+    border: 10px solid #c3f5ff;
+}
+.intro .intro-wrapper p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 0;
+}
+.skills h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+.skills-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+}
 
 
 /* Main Section End */
