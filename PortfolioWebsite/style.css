@@ -10,7 +10,7 @@ body{
     height: 100vh;
     background: linear-gradient(to left, #fff 88%, #c3f5ff 15%);
 }
-/* starting header secton  */
+/* Header Section Start  */
 header{
     height: 20vh;
     display: flex;
@@ -31,6 +31,7 @@ header .logo{
 text-transform: uppercase;
 color: #fff;
 }
+/* Animating the logo */
 @keyframes logoanimate {
  from{
     padding:0px ;
@@ -73,10 +74,13 @@ nav ul li a:before{
 nav ul li a:hover:before{
     width: 100%;
 }
-/* ending header section  */
-/* starting main section  */
+/* Header Section End*/
+/* Main Section Start  */
 main{
-    height: 80vh;
+    padding: 0px 50px; 
+}
+/* Home Section Start */
+section#home{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +126,6 @@ position: relative;
     box-shadow: .5px .5px 5px #0000005d;
     border: 2px solid #4458dc;
     transition: all .2s linear;
-
 }
 .leftpart .btn1{
     margin-left: 0px;
@@ -151,3 +154,11 @@ position: relative;
     height: 500px;
     border-radius: 100px;
 }
+/* Home Section End */
+
+
+
+
+
+
+/* Main Section End */
