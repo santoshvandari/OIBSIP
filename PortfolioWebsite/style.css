@@ -252,11 +252,6 @@ section#services{
     align-items: center;
     padding: 20px 300px;
     flex-wrap: wrap;
-    /* background: linear-gradient(); */
-    background-image:url('img/bg.jpg'),linear-gradient(#0000004d, #0000003a);
-    
-    /* background:  */
-
 }
 .services-wrapper .card{
     display: flex;
