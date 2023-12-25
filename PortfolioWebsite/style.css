@@ -11,6 +11,7 @@ body{
     height: 100vh;
     background: linear-gradient(to left, #fff 88%, #c3f5ff 15%);
 }
+
 /* starting header secton  */
 header{
     height: 20vh;
@@ -31,6 +32,7 @@ header .logo{
 .logo h1{
 text-transform: uppercase;
 color: #fff;
+font-size: 3rem;
 }
 @keyframes logoanimate {
  from{
@@ -59,7 +61,7 @@ nav ul li a{
     font-weight: 600;
     position: relative;
 }
-.home{
+.active{
     color: #4458dc;
 }
 nav ul li a:before{
@@ -76,6 +78,7 @@ nav ul li a:hover:before{
     width: 100%;
 }
 /* ending header section  */
+
 /* starting main section  */
 main{
     height: 80vh;
