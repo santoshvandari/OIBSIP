@@ -153,17 +153,14 @@ span.typed-cursor{
     color: #fff;
 }
 .rightpart{
-    margin-right: 48px;
+    margin-right: 4.8rem;
     border-radius: 31% 68% 17% 24% / 35% 67% 33% 32% ;
     background: #e8fbff;
 }
 .rightpart img{
-    height: 500px;
-    border-radius: 100px;
+    height: 50rem;
+    border-radius: 10rem;
 }
-/* hr{
-    margin: 10px 0;
-} */
 /* Home Section End */
 /* About Section Start  */
 section#about{
@@ -171,29 +168,29 @@ section#about{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 5rem 0;
 }
 .heading{
-    font-size: 48px;
+    font-size: 4.8rem;
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 1rem 0;
     width: 100%;
     text-align: center;
     background: #c3f5ff;
-    padding: 20px;
+    padding: 2rem;
 }
 .about-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* flex-wrap: wrap; */
-    padding:10px 200px ;
-    gap: 100px;
+    padding:1rem 20rem ;
+    gap: 10rem;
 }
 .about-wrapper .img img{
-    height: 600px;
+    height: 60rem;
     /* width: 450px; */
     border: 10px solid #c3f5ff;
     border-radius: 10px;
