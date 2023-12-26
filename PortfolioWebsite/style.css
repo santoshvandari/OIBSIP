@@ -100,16 +100,16 @@ position: relative;
 }
 .leftpart h2:after{
     content: "";
-    height: 5px;
+    height: 0.5rem;
     background-color: #000;
-    width: 400px;
+    width: 40rem;
     top: 75%;
     left: 21.8%;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 .leftpart h1{
-    font-size: 54px;
+    font-size: 5.4rem
     font-weight: 900;
     margin-bottom: 15px;
 }
