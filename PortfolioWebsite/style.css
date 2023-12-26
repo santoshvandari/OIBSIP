@@ -109,39 +109,38 @@ position: relative;
     border-radius: 1rem;
 }
 .leftpart h1{
-    font-size: 5.4rem
+    font-size: 5.4rem;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 .leftpart h3{
-    font-size: 25px;
+    font-size: 2.5rem;
     display: inline-block;
-    /* margin-bottom: 30px; */
 }
 span.typed-cursor{
-    font-size: 30px;
+    font-size: 3rem;
     color: #4458dc;
 }
 .leftpart .btn1,.btn2{
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     outline: none;
-    border-radius: 5px;
-    margin: 10px;
-    box-shadow: .5px .5px 5px #0000005d;
-    border: 2px solid #4458dc;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: .05rem .05rem 0.5rem #0000005d;
+    border: 0.2rem solid #4458dc;
     transition: all .2s linear;
 }
 .leftpart .btn1{
-    margin-left: 0px;
+    margin-left: 0;
     background: linear-gradient(to right, #4458dc 0%, #854fee 100%);
     color: #fff; 
 }
 .leftpart .btn2{
-    margin-left: 48px;
+    margin-left: 4.8rem;
     background: transparent;
     color: #000;
 }
