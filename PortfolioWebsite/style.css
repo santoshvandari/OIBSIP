@@ -228,11 +228,11 @@ section#about{
     cursor: pointer;
 }
 .skills-wrapper .left p i,.skills-wrapper .right p i{
-    margin: 0 10px;
-    font-size: 30px;
+    margin: 0 1rem;
+    font-size: 3rem;
 }
 .skills-wrapper .left p:hover,.skills-wrapper .right p:hover{
-    transform: translateY(-10px);
+    transform: translateY(-1rem);
 }
 /* About Section End */
 /* Services Section Start */
