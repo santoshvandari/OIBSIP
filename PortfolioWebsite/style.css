@@ -237,14 +237,14 @@ section#about{
 /* About Section End */
 /* Services Section Start */
 section#services{
-   margin: 50px 0;
+   margin: 5rem 0;
 }
 .services-wrapper{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 300px;
+    padding: 2rem 30rem;
     flex-wrap: wrap;
 }
 .services-wrapper .card{
