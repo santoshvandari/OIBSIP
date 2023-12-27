@@ -266,8 +266,8 @@ section#services{
     transform: scale(1.1);
 }
 .services-wrapper .card .icon i{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 .services-wrapper .card h4{
     font-size: 25px;
