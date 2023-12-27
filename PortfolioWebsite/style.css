@@ -309,10 +309,10 @@ section#portfolio{
     
 }
 .portfolio-wrapper .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-1rem);
 }
 .portfolio-wrapper .card .img img{
-    height: 450px;
+    height: 45rem;
     transition: transform .2s linear;
 }
 .portfolio-wrapper .card .img img:hover{
