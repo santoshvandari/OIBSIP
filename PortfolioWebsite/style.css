@@ -451,11 +451,11 @@ div.preloader{
     align-items: center;
 }
 div.preloader .loader{
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid #3498db;
+    border: 1rem solid #f3f3f3;
+    border-top: 1rem solid #3498db;
     animation: loader 1s linear infinite;
 }
 @keyframes loader{
