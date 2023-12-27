@@ -350,20 +350,20 @@ section#portfolio{
     font-size: 2rem;
 }
 .contact-form form input,textarea{
-    padding: 10px;
-    margin: 10px 0;
+    padding: 1rem;
+    margin: 1rem 0;
     outline: none;
-    border: 2px solid #4458dc;
-    border-radius: 5px;
-    font-size: 20px;
+    border: 0.2rem solid #4458dc;
+    border-radius: 0.5rem;
+    font-size: 2rem;
 }
 .contact-form form button{
-    padding: 10px 20px;
-    margin: 10px 0;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
     outline: none;
-    border: 2px solid #4458dc;
-    border-radius: 5px;
-    font-size: 20px;
+    border: 0.2rem solid #4458dc;
+    border-radius: 0.5rem;
+    font-size: 2rem;
     cursor: pointer;
     background: linear-gradient(to right, #4458dc 0%, #854fee 100%);
     color: #fff;
