@@ -319,7 +319,7 @@ section#portfolio{
     transform: scale(1.05);
 }
 .portfolio-wrapper .card p{
-    font-size: 20px;
+    font-size: 2rem;
 }
 /* Portfolio Section End */
 /* Contact Section Start */
@@ -327,17 +327,17 @@ section#portfolio{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 200px;
+    padding: 2rem 20rem;
     flex-wrap: wrap;   
 }
 .contact-form{
     width: 50%;
-    min-width: 500px;
-    padding: 0 50px;
+    min-width: 50rem;
+    padding: 0 5rem;
 }
 .contact-form h3{
-    font-size: 30px;
-    margin: 10px 0;
+    font-size: 3rem;
+    margin: 1rem 0;
     text-decoration: underline;
     text-align: center;
 }
@@ -347,7 +347,7 @@ section#portfolio{
     justify-content: center;
 }
 .contact-form form label{
-    font-size: 20px;
+    font-size: 2rem;
 }
 .contact-form form input,textarea{
     padding: 10px;
