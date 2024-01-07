@@ -1,1 +1,1 @@
-# Oasis Code of Remote Internship 
+# Code of Remote Internship 
